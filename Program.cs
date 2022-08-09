@@ -24,3 +24,5 @@ string [] ArraysCharThree(string [] arrays)
     }
     return arrrayresult;
 }
+string [] ArraysRes = ArraysCharThree(newarr);
+Console.WriteLine("Итоговый массив [" + string.Join(", ", ArraysRes) + "]");
