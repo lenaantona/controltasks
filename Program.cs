@@ -5,3 +5,22 @@
 Console.Write("Введие массив через точку c запятой: ");
 string [] newarr = Console.ReadLine().Split(';');
 Console.WriteLine("Начальный массив: [" + string.Join(", ", newarr) + "]");
+string [] ArraysCharThree(string [] arrays)
+{
+    int j = 0;
+    int count = 0;
+    for (int i = 0; i < arrays.Length; i++)
+    {
+        if (arrays[i].Length <= 3) count++;
+    }
+    string [] arrrayresult = new string [count];
+    for (int i = 0; i < arrays.Length; i++)
+    {
+        if (arrays[i].Length <= 3) 
+        {
+            arrrayresult[j] = arrays[i];
+            j++;
+        }
+    }
+    return arrrayresult;
+}
