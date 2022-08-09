@@ -1,7 +1,20 @@
-echo "# controltasks" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/lenaantona/controltasks.git
-git push -u origin main
+## Итоговая проверочная работа.
+# Решение
+1. Создаем репозиторий на GitHub
+2. Выполняем действия в терминале:
+* git init
+* git add README.md
+* git commit -m "first commit"
+* git branch -M main
+* git remote add origin https://github.com/lenaantona/controltasks.git
+* git push -u origin main
+3. Выполняем команду в терминале dotnet new console для создания нового проекта
+4. Создаем файл *.gitignore*
+5. **Пишем код самой задачи:**
+   * осуществляем ввод массива
+   * создаем метод, в ктором осуществляется подсчет и запись в новый массив элементов, чья длина равна или меньше 3
+   * вызываем данный метод
+   * выводим получившийся массив
+В процессе написания кода, осуществляем *git commit -m ""*
+5. Выполняем проверку кода dotnet run
+6. Заливаем на GitHub
